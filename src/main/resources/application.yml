@@ -1,0 +1,8 @@
+
+grpc:
+  client:
+    user-aggregate:
+      address: 'static://127.0.0.1:8091'
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
