@@ -15,9 +15,7 @@
 package com.chaiweijian.groupwallet.restapi.controllers;
 
 import com.chaiweijian.groupwallet.restapi.grpc.clients.UserAggregateService;
-import com.chaiweijian.groupwallet.userservice.v1.CreateUserRequest;
-import com.chaiweijian.groupwallet.userservice.v1.GetUserRequest;
-import com.chaiweijian.groupwallet.userservice.v1.User;
+import com.chaiweijian.groupwallet.userservice.v1.*;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -31,14 +29,29 @@ public class UsersController {
         this.userAggregateService = userAggregateService;
     }
 
+    @GetMapping(value = "users:findUser", produces = ContentType.APPLICATION_JSON, consumes = ContentType.APPLICATION_JSON)
+    public ResponseEntity<User> findUser(@RequestParam String uid) {
+        return ResponseEntity.ok(userAggregateService.findUser(FindUserRequest.newBuilder().setUid(uid).build()));
+    }
+
     @GetMapping(value = "users/{name}", produces = ContentType.APPLICATION_JSON, consumes = ContentType.APPLICATION_JSON)
     public ResponseEntity<User> getUser(@PathVariable String name) {
         return ResponseEntity.ok(
-                userAggregateService.getUser(GetUserRequest.newBuilder().setName(String.format("users/%s", name)).build()));
+                userAggregateService.getUser(GetUserRequest.newBuilder().setName(nameFromPathVariable(name)).build()));
     }
 
     @PostMapping(value = "users", produces = ContentType.APPLICATION_JSON, consumes = ContentType.APPLICATION_JSON)
     public ResponseEntity<User> createUser(@RequestBody CreateUserRequest createUserRequest) {
         return ResponseEntity.ok(userAggregateService.createUser(createUserRequest));
+    }
+
+    @PatchMapping(value = "users/{name}", produces = ContentType.APPLICATION_JSON, consumes = ContentType.APPLICATION_JSON)
+    public ResponseEntity<User> updateUser(@RequestBody UpdateUserRequest updateUserRequest, @PathVariable String name) {
+        var user = updateUserRequest.getUser().toBuilder().setName(nameFromPathVariable(name));
+        return ResponseEntity.ok(userAggregateService.updateUser(updateUserRequest.toBuilder().setUser(user).build()));
+    }
+
+    private String nameFromPathVariable(String name) {
+        return String.format("users/%s", name);
     }
 }

@@ -14,10 +14,7 @@
 
 package com.chaiweijian.groupwallet.restapi.grpc.clients;
 
-import com.chaiweijian.groupwallet.userservice.v1.CreateUserRequest;
-import com.chaiweijian.groupwallet.userservice.v1.GetUserRequest;
-import com.chaiweijian.groupwallet.userservice.v1.User;
-import com.chaiweijian.groupwallet.userservice.v1.UserAggregateServiceGrpc;
+import com.chaiweijian.groupwallet.userservice.v1.*;
 import net.devh.boot.grpc.client.inject.GrpcClient;
 import org.springframework.stereotype.Service;
 
@@ -26,11 +23,19 @@ public class UserAggregateService {
     @GrpcClient("user-aggregate")
     private UserAggregateServiceGrpc.UserAggregateServiceBlockingStub userAggregateServiceBlockingStub;
 
+    public User getUser(GetUserRequest getUserRequest) {
+        return userAggregateServiceBlockingStub.getUser(getUserRequest);
+    }
+
+    public User findUser(FindUserRequest findUserRequest) {
+        return userAggregateServiceBlockingStub.findUser(findUserRequest);
+    }
+
     public User createUser(CreateUserRequest createUserRequest) {
         return userAggregateServiceBlockingStub.createUser(createUserRequest);
     }
 
-    public User getUser(GetUserRequest getUserRequest) {
-        return userAggregateServiceBlockingStub.getUser(getUserRequest);
+    public User updateUser(UpdateUserRequest updateUserRequest) {
+        return userAggregateServiceBlockingStub.updateUser(updateUserRequest);
     }
 }
