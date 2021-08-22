@@ -14,10 +14,7 @@
 
 package com.chaiweijian.groupwallet.restapi.grpc.clients;
 
-import com.chaiweijian.groupwallet.groupservice.v1.CreateGroupRequest;
-import com.chaiweijian.groupwallet.groupservice.v1.GetGroupRequest;
-import com.chaiweijian.groupwallet.groupservice.v1.Group;
-import com.chaiweijian.groupwallet.groupservice.v1.GroupAggregateServiceGrpc;
+import com.chaiweijian.groupwallet.groupservice.v1.*;
 import net.devh.boot.grpc.client.inject.GrpcClient;
 import org.springframework.stereotype.Service;
 
@@ -28,6 +25,10 @@ public class GroupAggregateService {
 
     public Group createGroup(CreateGroupRequest createGroupRequest) {
         return groupAggregateServiceBlockingStub.createGroup(createGroupRequest);
+    }
+
+    public Group updateGroup(UpdateGroupRequest updateGroupRequest) {
+        return groupAggregateServiceBlockingStub.updateGroup(updateGroupRequest);
     }
 
     public Group getGroup(GetGroupRequest getGroupRequest) {
