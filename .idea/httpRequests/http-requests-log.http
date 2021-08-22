@@ -1,3 +1,27 @@
+GET http://localhost:8080/v1/groups/1b1bfe3c-84eb-44e3-8902-497709693c8f
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-22T152204.200.json
+
+###
+
+POST http://localhost:8080/v1/groups
+Content-Type: application/json
+Accept: application/json
+
+{
+  "group": {
+    "owner": "users/user-id-1",
+    "displayName": "my family group ",
+    "currencyCode": "MYR"
+  }
+}
+
+<> 2021-08-22T152140.200.json
+
+###
+
 POST http://localhost:8080/v1/groups
 Content-Type: application/json
 Accept: application/json
@@ -749,39 +773,6 @@ Accept: application/json
 }
 
 <> 2021-08-21T185723.200.json
-
-###
-
-POST http://localhost:8080/v1/users
-Content-Type: application/json
-Accept: application/json
-
-{
-  "userId": "user-id-15",
-  "user": {
-    "email": "email",
-    "displayName": "display-name",
-    "uid": "uid-15"
-  }
-}
-
-<> 2021-08-21T185716.409.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-15
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "email": "email-updated",
-    "aggregateVersion": 2
-  },
-  "updateMask": "email"
-}
-
-<> 2021-08-21T185450.409.json
 
 ###
 

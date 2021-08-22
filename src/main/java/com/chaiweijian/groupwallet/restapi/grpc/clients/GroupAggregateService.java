@@ -15,6 +15,7 @@
 package com.chaiweijian.groupwallet.restapi.grpc.clients;
 
 import com.chaiweijian.groupwallet.groupservice.v1.CreateGroupRequest;
+import com.chaiweijian.groupwallet.groupservice.v1.GetGroupRequest;
 import com.chaiweijian.groupwallet.groupservice.v1.Group;
 import com.chaiweijian.groupwallet.groupservice.v1.GroupAggregateServiceGrpc;
 import net.devh.boot.grpc.client.inject.GrpcClient;
@@ -27,5 +28,9 @@ public class GroupAggregateService {
 
     public Group createGroup(CreateGroupRequest createGroupRequest) {
         return groupAggregateServiceBlockingStub.createGroup(createGroupRequest);
+    }
+
+    public Group getGroup(GetGroupRequest getGroupRequest) {
+        return groupAggregateServiceBlockingStub.getGroup(getGroupRequest);
     }
 }
