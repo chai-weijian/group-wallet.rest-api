@@ -1,0 +1,787 @@
+POST http://localhost:8080/v1/groups
+Content-Type: application/json
+Accept: application/json
+
+{
+  "group": {
+    "owner": "users/user-id-1",
+    "displayName": "my family group ",
+    "currencyCode": "MYR"
+  }
+}
+
+<> 2021-08-22T150845.200.json
+
+###
+
+POST http://localhost:8080/v1/groups
+Content-Type: application/json
+Accept: application/json
+
+{
+  "group": {
+    "owner": "users/user-id-1",
+    "displayName": "my family group "
+  }
+}
+
+<> 2021-08-22T150829.400.json
+
+###
+
+POST http://localhost:8080/v1/groups
+Content-Type: application/json
+Accept: application/json
+
+{
+  "group": {
+    "owner": "users/user-id-1",
+    "displayName": "my family group "
+  }
+}
+
+<> 2021-08-22T150550.400.json
+
+###
+
+POST http://localhost:8080/v1/groups
+Content-Type: application/json
+Accept: application/json
+
+{
+  "group": {
+    "owner": "users/user-id-1"
+  }
+}
+
+<> 2021-08-22T150535.400.json
+
+###
+
+POST http://localhost:8080/v1/groups
+Content-Type: application/json
+Accept: application/json
+
+{
+  "group": {
+    "owner": "users/user-id-1"
+  }
+}
+
+<> 2021-08-22T150342.500.json
+
+###
+
+POST http://localhost:8080/v1/groups
+Content-Type: application/json
+Accept: application/json
+
+{
+  "group": {
+  }
+}
+
+<> 2021-08-22T150310.400.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "email": "  email-updated-3",
+    "displayName": "display-name-updated-3  ",
+    "etag": "\"4031db1c4b1aabee55f5f55dbfeceb5e41ca4cde4f9e37a90cc8e24cad32ebff\""
+  },
+  "updateMask": "email,displayName"
+}
+
+<> 2021-08-22T132621.200.json
+
+###
+
+GET http://localhost:8080/v1/users:findUser?uid=uid-1
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-22T132608.200.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "email": "  email-updated-2",
+    "displayName": "display-name-updated-2  ",
+    "etag": "\"6fececee66e173fe45f7db632c4040b89d3ff603253d5fb339e033a7cedf9050\""
+  },
+  "updateMask": "email,displayName"
+}
+
+<> 2021-08-22T132605.409.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "email": "  email-updated-2",
+    "displayName": "display-name-updated-2  ",
+    "aggregateVersion": 4,
+    "etag": "\"6fececee66e173fe45f7db632c4040b89d3ff603253d5fb339e033a7cedf9050\""
+  },
+  "updateMask": "email,displayName"
+}
+
+<> 2021-08-22T132555.200.json
+
+###
+
+GET http://localhost:8080/v1/users:findUser?uid=uid-1
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-22T132530.200.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "name": "users/user-id-18",
+    "email": "  email-updated-5",
+    "displayName": "display-name-updated-5  ",
+    "aggregateVersion": 4,
+    "uid": "uid-18",
+    "etag": "\"b13b0d663625f7b5dba85b2a7c94fbc67d054e45b9171ede09e7a960c7901a23\""
+  },
+  "updateMask": "email,displayName"
+}
+
+<> 2021-08-22T132523.409.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "name": "users/user-id-18",
+    "email": "  email-updated-5",
+    "displayName": "display-name-updated-5  ",
+    "aggregateVersion": 4,
+    "uid": "uid-18",
+    "etag": "\"b13b0d663625f7b5dba85b2a7c94fbc67d054e45b9171ede09e7a960c7901a23\""
+  },
+  "updateMask": "email,displayName"
+}
+
+<> 2021-08-22T132510.200.json
+
+###
+
+GET http://localhost:8080/v1/users:findUser?uid=uid-1
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-22T132506.200.json
+
+###
+
+GET http://localhost:8080/v1/users:findUser?uid=uid-18
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-22T132503.404.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-22T132459.200.json
+
+###
+
+POST http://localhost:8080/v1/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": "user-id-1",
+  "user": {
+    "email": "email",
+    "displayName": "display-name",
+    "uid": "uid-1"
+  }
+}
+
+<> 2021-08-22T132451.200.json
+
+###
+
+POST http://localhost:8080/v1/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": "user-id-1",
+  "user": {
+    "email": "email",
+    "displayName": "display-name",
+    "uid": "uid-1"
+  }
+}
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "name": "users/user-id-18",
+    "email": "  email-updated-5",
+    "displayName": "display-name-updated-5  ",
+    "aggregateVersion": 4,
+    "uid": "uid-18",
+    "etag": "\"b13b0d663625f7b5dba85b2a7c94fbc67d054e45b9171ede09e7a960c7901a23\""
+  },
+  "updateMask": "email,displayName"
+}
+
+<> 2021-08-22T121542.200.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "name": "users/user-id-18",
+    "email": "  email-updated-5",
+    "displayName": "display-name-updated-5  ",
+    "aggregateVersion": 4,
+    "uid": "uid-18",
+    "etag": "\"b13b0d663625f7b5dba85b2a7c94fbc67d054e45b9171ede09e7a960c7901a23\""
+  },
+  "updateMask": "*"
+}
+
+<> 2021-08-22T121523.400.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "name": "users/user-id-18",
+    "email": "  email-updated-5",
+    "displayName": "display-name-updated-5  ",
+    "aggregateVersion": 4,
+    "uid": "uid-18",
+    "etag": "whatajoke"
+  },
+  "updateMask": "*"
+}
+
+<> 2021-08-22T121514.409.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "name": "users/user-id-18",
+    "email": "  email-updated-5",
+    "displayName": "display-name-updated-5  ",
+    "aggregateVersion": 4,
+    "uid": "uid-18"
+  },
+  "updateMask": "*"
+}
+
+<> 2021-08-22T121500.409.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-22T121348.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-22T121233.200.json
+
+###
+
+POST http://localhost:8080/v1/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": "user-id-1",
+  "user": {
+    "email": "email",
+    "displayName": "display-name",
+    "uid": "uid-1"
+  }
+}
+
+<> 2021-08-22T121220.200.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-18
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "name": "users/user-id-18",
+    "email": "  email-updated-5",
+    "displayName": "display-name-updated-5  ",
+    "aggregateVersion": 4,
+    "uid": "uid-18"
+  },
+  "updateMask": "*"
+}
+
+<> 2021-08-21T191657.400.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-18
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "name": "users/user-id-18",
+    "email": "  email-updated-4",
+    "displayName": "display-name-updated-4  ",
+    "aggregateVersion": 3,
+    "uid": "uid-18"
+  },
+  "updateMask": "displayName,email"
+}
+
+<> 2021-08-21T191633.200.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-18
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "name": "users/user-id-18",
+    "email": "  email-updated-3",
+    "displayName": "display-name-updated-3  ",
+    "aggregateVersion": 2,
+    "uid": "uid-18"
+  },
+  "updateMask": "displayName,email"
+}
+
+<> 2021-08-21T191509.200.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-18
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "name": "users/user-id-18",
+    "email": "email-updated-2",
+    "displayName": "display-name-updated-2",
+    "aggregateVersion": 1,
+    "uid": "uid-18"
+  },
+  "updateMask": "displayName,email"
+}
+
+<> 2021-08-21T191051.200.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-18
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "name": "users/user-id-18",
+    "email": "email-updated-2",
+    "displayName": "display-name-updated-2",
+    "aggregateVersion": 1,
+    "uid": "uid-18"
+  },
+  "updateMask": "displayName,email,uid"
+}
+
+<> 2021-08-21T191040.400.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-18
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "name": "users/user-id-18",
+    "email": "email-updated-2",
+    "displayName": "display-name-updated-2",
+    "aggregateVersion": 5,
+    "uid": "uid-18"
+  },
+  "updateMask": "displayName,email,uid"
+}
+
+<> 2021-08-21T191033.409.json
+
+###
+
+GET http://localhost:8080/v1/users:findUser?uid=uid-18
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-21T191027.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-18
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-21T191023.200.json
+
+###
+
+POST http://localhost:8080/v1/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": "user-id-18",
+  "user": {
+    "email": "email",
+    "displayName": "display-name",
+    "uid": "uid-18"
+  }
+}
+
+<> 2021-08-21T191017.200.json
+
+###
+
+POST http://localhost:8080/v1/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": "user-id-17",
+  "user": {
+    "email": "email",
+    "displayName": "display-name",
+    "uid": "uid-18"
+  }
+}
+
+<> 2021-08-21T191012.409.json
+
+###
+
+POST http://localhost:8080/v1/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": "user-id-17",
+  "user": {
+    "email": "email",
+    "displayName": "display-name",
+    "uid": "uid-17"
+  }
+}
+
+<> 2021-08-21T191004.409.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-17
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "name": "users/user-id-18",
+    "email": "email-updated-2",
+    "displayName": "display-name-updated-2",
+    "aggregateVersion": 5,
+    "uid": "uid-18"
+  },
+  "updateMask": "displayName,email,uid"
+}
+
+<> 2021-08-21T190558.400.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-17
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "name": "users/user-id-18",
+    "email": "email-updated-2",
+    "displayName": "display-name-updated-2",
+    "aggregateVersion": 4
+  },
+  "updateMask": "displayName,email"
+}
+
+<> 2021-08-21T190536.200.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-17
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "name": "users/user-id-18",
+    "email": "email-updated-2",
+    "displayName": "display-name-updated-2",
+    "aggregateVersion": 4
+  },
+  "updateMask": "displayName,email,name"
+}
+
+<> 2021-08-21T190525.400.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-17
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "name": "users/user-id-18",
+    "email": "email-updated-2",
+    "displayName": "display-name-updated-2",
+    "aggregateVersion": 4
+  },
+  "updateMask": "displayName,email, name"
+}
+
+<> 2021-08-21T190511.400.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-17
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "name": "users/user-id-18",
+    "email": "email-updated-2",
+    "displayName": "display-name-updated-2",
+    "aggregateVersion": 3
+  },
+  "updateMask": "displayName,email, name"
+}
+
+<> 2021-08-21T190508.409.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-17
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "email": "email-updated-2",
+    "displayName": "display-name-updated-2",
+    "aggregateVersion": 3
+  },
+  "updateMask": "displayName,email"
+}
+
+<> 2021-08-21T185938.200.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-17
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "email": "email-updated-2",
+    "displayName": "display-name-updated",
+    "aggregateVersion": 2
+  },
+  "updateMask": "displayName"
+}
+
+<> 2021-08-21T185923.200.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-17
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "email": "email-updated",
+    "displayName": "display-name-updated",
+    "aggregateVersion": 1
+  },
+  "updateMask": "email"
+}
+
+<> 2021-08-21T185911.409.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-17
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "email": "email-updated",
+    "displayName": "display-name-updated",
+    "aggregateVersion": 1
+  },
+  "updateMask": "email"
+}
+
+<> 2021-08-21T185906.200.json
+
+###
+
+POST http://localhost:8080/v1/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": "user-id-17",
+  "user": {
+    "email": "email",
+    "displayName": "display-name",
+    "uid": "uid-17"
+  }
+}
+
+<> 2021-08-21T185837.200.json
+
+###
+
+POST http://localhost:8080/v1/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": "user-id-16",
+  "user": {
+    "email": "email",
+    "displayName": "display-name",
+    "uid": "uid-16"
+  }
+}
+
+<> 2021-08-21T185830.409.json
+
+###
+
+POST http://localhost:8080/v1/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": "user-id-16",
+  "user": {
+    "email": "email",
+    "displayName": "display-name",
+    "uid": "uid-16"
+  }
+}
+
+<> 2021-08-21T185723.200.json
+
+###
+
+POST http://localhost:8080/v1/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": "user-id-15",
+  "user": {
+    "email": "email",
+    "displayName": "display-name",
+    "uid": "uid-15"
+  }
+}
+
+<> 2021-08-21T185716.409.json
+
+###
+
+PATCH http://localhost:8080/v1/users/user-id-15
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "email": "email-updated",
+    "aggregateVersion": 2
+  },
+  "updateMask": "email"
+}
+
+<> 2021-08-21T185450.409.json
+
+###
+
