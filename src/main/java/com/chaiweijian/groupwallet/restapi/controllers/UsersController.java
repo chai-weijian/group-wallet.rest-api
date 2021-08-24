@@ -14,6 +14,7 @@
 
 package com.chaiweijian.groupwallet.restapi.controllers;
 
+import com.chaiweijian.groupwallet.restapi.grpc.clients.GroupInvitationService;
 import com.chaiweijian.groupwallet.restapi.grpc.clients.UserAggregateService;
 import com.chaiweijian.groupwallet.userservice.v1.*;
 import org.springframework.http.ResponseEntity;
@@ -24,9 +25,11 @@ import org.springframework.web.bind.annotation.*;
 public class UsersController {
 
     private final UserAggregateService userAggregateService;
+    private final GroupInvitationService groupInvitationService;
 
-    public UsersController(UserAggregateService userAggregateService) {
+    public UsersController(UserAggregateService userAggregateService, GroupInvitationService groupInvitationService) {
         this.userAggregateService = userAggregateService;
+        this.groupInvitationService = groupInvitationService;
     }
 
     @GetMapping(value = "users:findUser", produces = ContentType.APPLICATION_JSON, consumes = ContentType.APPLICATION_JSON)
@@ -37,7 +40,7 @@ public class UsersController {
     @GetMapping(value = "users/{name}", produces = ContentType.APPLICATION_JSON, consumes = ContentType.APPLICATION_JSON)
     public ResponseEntity<User> getUser(@PathVariable String name) {
         return ResponseEntity.ok(
-                userAggregateService.getUser(GetUserRequest.newBuilder().setName(nameFromPathVariable(name)).build()));
+                userAggregateService.getUser(GetUserRequest.newBuilder().setName(userNameFromPathVariable(name)).build()));
     }
 
     @PostMapping(value = "users", produces = ContentType.APPLICATION_JSON, consumes = ContentType.APPLICATION_JSON)
@@ -47,11 +50,16 @@ public class UsersController {
 
     @PatchMapping(value = "users/{name}", produces = ContentType.APPLICATION_JSON, consumes = ContentType.APPLICATION_JSON)
     public ResponseEntity<User> updateUser(@RequestBody UpdateUserRequest updateUserRequest, @PathVariable String name) {
-        var user = updateUserRequest.getUser().toBuilder().setName(nameFromPathVariable(name));
+        var user = updateUserRequest.getUser().toBuilder().setName(userNameFromPathVariable(name));
         return ResponseEntity.ok(userAggregateService.updateUser(updateUserRequest.toBuilder().setUser(user).build()));
     }
 
-    private String nameFromPathVariable(String name) {
+    @PostMapping(value = "users/{user}/groupInvitations", produces = ContentType.APPLICATION_JSON, consumes = ContentType.APPLICATION_JSON)
+    public ResponseEntity<GroupInvitation> createGroupInvitation(@RequestBody CreateGroupInvitationRequest createGroupInvitationRequest, @PathVariable String user) {
+        return ResponseEntity.ok(groupInvitationService.createGroup(createGroupInvitationRequest.toBuilder().setParent(userNameFromPathVariable(user)).build()));
+    }
+
+    private String userNameFromPathVariable(String name) {
         return String.format("users/%s", name);
     }
 }
