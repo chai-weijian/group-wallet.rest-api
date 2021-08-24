@@ -1,8 +1,248 @@
-GET http://localhost:8080/v1/groups/1b1bfe3c-84eb-44e3-8902-497709693c8f
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/36feabcc-5798-4624-8eb1-384818bd7f7e:reject
 Content-Type: application/json
 Accept: application/json
 
-<> 2021-08-22T152204.200.json
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/36feabcc-5798-4624-8eb1-384818bd7f7e",
+    "etag": "\"4a2da58784e63d8f4cdb9e5851a04282f9c7acab09884b06120bbf967f98fdfa\""
+  }
+}
+
+<> 2021-08-24T221811.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "group": "groups/8d713da4-4e51-4779-b1ce-0151daad3188"
+  }
+}
+
+<> 2021-08-24T221657.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/9dc01140-07cd-4516-bf48-6daeb261d6ec:reject
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/9dc01140-07cd-4516-bf48-6daeb261d6ec",
+    "etag": "\"4a2da58784e63d8f4cdb9e5851a04282f9c7acab09884b06120bbf967f98fdfa\""
+  }
+}
+
+<> 2021-08-24T221650.409.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/9dc01140-07cd-4516-bf48-6daeb261d6ec:reject
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/9dc01140-07cd-4516-bf48-6daeb261d6ec",
+    "etag": "\"4a2da58784e63d8f4cdb9e5851a04282f9c7acab09884b06120bbf967f98fdfa\""
+  }
+}
+
+<> 2021-08-24T221600.500.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "group": "groups/8d713da4-4e51-4779-b1ce-0151daad3188"
+  }
+}
+
+<> 2021-08-24T221508.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "group": "groups/8d713da4-4e51-4779-b1ce-0151daad3188"
+  }
+}
+
+<> 2021-08-24T221326.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/a2d6b295-0503-4259-b986-22f05e18fe64:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/a2d6b295-0503-4259-b986-22f05e18fe64",
+    "etag": "\"d6be093289c5b4d1ac5e673c9332644060847a942647d542b8a3da4c5a215f83\""
+  }
+}
+
+<> 2021-08-24T220433.400.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/a2d6b295-0503-4259-b986-22f05e18fe64:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/a2d6b295-0503-4259-b986-22f05e18fe64",
+    "etag": "\"4a2da58784e63d8f4cdb9e5851a04282f9c7acab09884b06120bbf967f98fdfa\""
+  }
+}
+
+<> 2021-08-24T220421.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e4284ae9-7b61-48b0-8783-54ea45f7e65c:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/e4284ae9-7b61-48b0-8783-54ea45f7e65c",
+    "etag": "\"4a2da58784e63d8f4cdb9e5851a04282f9c7acab09884b06120bbf967f98fdfa\""
+  }
+}
+
+<> 2021-08-24T220356.409.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "group": "groups/8d713da4-4e51-4779-b1ce-0151daad3188"
+  }
+}
+
+<> 2021-08-24T220346.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e4284ae9-7b61-48b0-8783-54ea45f7e65c:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/e4284ae9-7b61-48b0-8783-54ea45f7e65c",
+    "etag": "\"4a2da58784e63d8f4cdb9e5851a04282f9c7acab09884b06120bbf967f98fdfa\""
+  }
+}
+
+<> 2021-08-24T220310.409.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e4284ae9-7b61-48b0-8783-54ea45f7e65c:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/e4284ae9-7b61-48b0-8783-54ea45f7e65c",
+    "etag": "\"4a2da58784e63d8f4cdb9e5851a04282f9c7acab09884b06120bbf967f98fdfa\""
+  }
+}
+
+<> 2021-08-24T220234.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "group": "groups/8d713da4-4e51-4779-b1ce-0151daad3188"
+  }
+}
+
+<> 2021-08-24T220217.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/c3f2e529-0d25-4db5-b2fe-051c000d1b42:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/c3f2e529-0d25-4db5-b2fe-051c000d1b42",
+    "etag": "\"4a2da58784e63d8f4cdb9e5851a04282f9c7acab09884b06120bbf967f98fdfa\""
+  }
+}
+
+<> 2021-08-24T220109.409.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/c3f2e529-0d25-4db5-b2fe-051c000d1b42:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/c3f2e529-0d25-4db5-b2fe-051c000d1b42",
+    "etag": "\"4a2da58784e63d8f4cdb9e5851a04282f9c7acab09884b06120bbf967f98fdfa\""
+  }
+}
+
+<> 2021-08-24T220046.409.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/c3f2e529-0d25-4db5-b2fe-051c000d1b42:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/c3f2e529-0d25-4db5-b2fe-051c000d1b42"
+  }
+}
+
+<> 2021-08-24T220039.409.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "group": "groups/8d713da4-4e51-4779-b1ce-0151daad3188"
+  }
+}
+
+<> 2021-08-24T220011.200.json
 
 ###
 
@@ -18,7 +258,7 @@ Accept: application/json
   }
 }
 
-<> 2021-08-22T152140.200.json
+<> 2021-08-24T215942.200.json
 
 ###
 
@@ -34,7 +274,7 @@ Accept: application/json
   }
 }
 
-<> 2021-08-22T150845.200.json
+<> 2021-08-24T215940.503.json
 
 ###
 
@@ -45,11 +285,12 @@ Accept: application/json
 {
   "group": {
     "owner": "users/user-id-1",
-    "displayName": "my family group "
+    "displayName": "my family group ",
+    "currencyCode": "MYR"
   }
 }
 
-<> 2021-08-22T150829.400.json
+<> 2021-08-24T215937.503.json
 
 ###
 
@@ -60,184 +301,12 @@ Accept: application/json
 {
   "group": {
     "owner": "users/user-id-1",
-    "displayName": "my family group "
+    "displayName": "my family group ",
+    "currencyCode": "MYR"
   }
 }
 
-<> 2021-08-22T150550.400.json
-
-###
-
-POST http://localhost:8080/v1/groups
-Content-Type: application/json
-Accept: application/json
-
-{
-  "group": {
-    "owner": "users/user-id-1"
-  }
-}
-
-<> 2021-08-22T150535.400.json
-
-###
-
-POST http://localhost:8080/v1/groups
-Content-Type: application/json
-Accept: application/json
-
-{
-  "group": {
-    "owner": "users/user-id-1"
-  }
-}
-
-<> 2021-08-22T150342.500.json
-
-###
-
-POST http://localhost:8080/v1/groups
-Content-Type: application/json
-Accept: application/json
-
-{
-  "group": {
-  }
-}
-
-<> 2021-08-22T150310.400.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-1
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "email": "  email-updated-3",
-    "displayName": "display-name-updated-3  ",
-    "etag": "\"4031db1c4b1aabee55f5f55dbfeceb5e41ca4cde4f9e37a90cc8e24cad32ebff\""
-  },
-  "updateMask": "email,displayName"
-}
-
-<> 2021-08-22T132621.200.json
-
-###
-
-GET http://localhost:8080/v1/users:findUser?uid=uid-1
-Content-Type: application/json
-Accept: application/json
-
-<> 2021-08-22T132608.200.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-1
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "email": "  email-updated-2",
-    "displayName": "display-name-updated-2  ",
-    "etag": "\"6fececee66e173fe45f7db632c4040b89d3ff603253d5fb339e033a7cedf9050\""
-  },
-  "updateMask": "email,displayName"
-}
-
-<> 2021-08-22T132605.409.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-1
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "email": "  email-updated-2",
-    "displayName": "display-name-updated-2  ",
-    "aggregateVersion": 4,
-    "etag": "\"6fececee66e173fe45f7db632c4040b89d3ff603253d5fb339e033a7cedf9050\""
-  },
-  "updateMask": "email,displayName"
-}
-
-<> 2021-08-22T132555.200.json
-
-###
-
-GET http://localhost:8080/v1/users:findUser?uid=uid-1
-Content-Type: application/json
-Accept: application/json
-
-<> 2021-08-22T132530.200.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-1
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "name": "users/user-id-18",
-    "email": "  email-updated-5",
-    "displayName": "display-name-updated-5  ",
-    "aggregateVersion": 4,
-    "uid": "uid-18",
-    "etag": "\"b13b0d663625f7b5dba85b2a7c94fbc67d054e45b9171ede09e7a960c7901a23\""
-  },
-  "updateMask": "email,displayName"
-}
-
-<> 2021-08-22T132523.409.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-1
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "name": "users/user-id-18",
-    "email": "  email-updated-5",
-    "displayName": "display-name-updated-5  ",
-    "aggregateVersion": 4,
-    "uid": "uid-18",
-    "etag": "\"b13b0d663625f7b5dba85b2a7c94fbc67d054e45b9171ede09e7a960c7901a23\""
-  },
-  "updateMask": "email,displayName"
-}
-
-<> 2021-08-22T132510.200.json
-
-###
-
-GET http://localhost:8080/v1/users:findUser?uid=uid-1
-Content-Type: application/json
-Accept: application/json
-
-<> 2021-08-22T132506.200.json
-
-###
-
-GET http://localhost:8080/v1/users:findUser?uid=uid-18
-Content-Type: application/json
-Accept: application/json
-
-<> 2021-08-22T132503.404.json
-
-###
-
-GET http://localhost:8080/v1/users/user-id-1
-Content-Type: application/json
-Accept: application/json
-
-<> 2021-08-22T132459.200.json
+<> 2021-08-24T215857.503.json
 
 ###
 
@@ -254,7 +323,361 @@ Accept: application/json
   }
 }
 
-<> 2021-08-22T132451.200.json
+<> 2021-08-24T215850.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2"
+  }
+}
+
+<> 2021-08-24T214959.400.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2"
+  }
+}
+
+<> 2021-08-24T214956.503.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2"
+  }
+}
+
+<> 2021-08-24T214954.503.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2"
+  }
+}
+
+<> 2021-08-24T214952.503.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2"
+  }
+}
+
+<> 2021-08-24T214949.503.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2"
+  }
+}
+
+<> 2021-08-24T214936.503.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2"
+  }
+}
+
+<> 2021-08-24T214756.503.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation" : {
+    "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
+  }
+}
+
+<> 2021-08-24T214736.400.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
+}
+
+<> 2021-08-24T214716.400.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
+}
+
+<> 2021-08-24T210618.400.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
+}
+
+<> 2021-08-24T210608.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "group": "groups/db7c8e23-d243-4085-b475-c76ef3c5aa45"
+  }
+}
+
+<> 2021-08-24T210531.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/cd5a5fa9-935f-4303-b208-45013007d57c:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
+}
+
+<> 2021-08-24T210502.400.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/cd5a5fa9-935f-4303-b208-45013007d57c:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
+}
+
+<> 2021-08-24T210200.500.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/cd5a5fa9-935f-4303-b208-45013007d57c:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
+}
+
+<> 2021-08-24T210131.500.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/cd5a5fa9-935f-4303-b208-45013007d57c:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
+}
+
+<> 2021-08-24T210122.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/cd5a5fa9-935f-4303-b208-45013007d57c:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
+}
+
+<> 2021-08-24T205938.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/cd5a5fa9-935f-4303-b208-45013007d57c:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
+}
+
+<> 2021-08-24T205934.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/cd5a5fa9-935f-4303-b208-45013007d57c:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
+}
+
+<> 2021-08-24T204446.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/cd5a5fa9-935f-4303-b208-45013007d57c:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
+}
+
+<> 2021-08-24T204437.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/cd5a5fa9-935f-4303-b208-45013007d57c:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
+}
+
+<> 2021-08-24T204431.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "group": "groups/db7c8e23-d243-4085-b475-c76ef3c5aa45"
+  }
+}
+
+<> 2021-08-24T204417.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
+}
+
+<> 2021-08-24T204325.400.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
+}
+
+<> 2021-08-24T203840.500.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "group": "groups/db7c8e23-d243-4085-b475-c76ef3c5aa45"
+  }
+}
+
+<> 2021-08-24T203648.200.json
+
+###
+
+POST http://localhost:8080/v1/groups
+Content-Type: application/json
+Accept: application/json
+
+{
+  "group": {
+    "owner": "users/user-id-1",
+    "displayName": "my family group ",
+    "currencyCode": "MYR"
+  }
+}
+
+<> 2021-08-24T203621.200.json
+
+###
+
+POST http://localhost:8080/v1/groups
+Content-Type: application/json
+Accept: application/json
+
+{
+  "group": {
+    "owner": "users/user-id-1",
+    "displayName": "my family group ",
+    "currencyCode": "MYR"
+  }
+}
+
+<> 2021-08-24T203602.503.json
 
 ###
 
@@ -271,508 +694,7 @@ Accept: application/json
   }
 }
 
-###
-
-PATCH http://localhost:8080/v1/users/user-id-1
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "name": "users/user-id-18",
-    "email": "  email-updated-5",
-    "displayName": "display-name-updated-5  ",
-    "aggregateVersion": 4,
-    "uid": "uid-18",
-    "etag": "\"b13b0d663625f7b5dba85b2a7c94fbc67d054e45b9171ede09e7a960c7901a23\""
-  },
-  "updateMask": "email,displayName"
-}
-
-<> 2021-08-22T121542.200.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-1
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "name": "users/user-id-18",
-    "email": "  email-updated-5",
-    "displayName": "display-name-updated-5  ",
-    "aggregateVersion": 4,
-    "uid": "uid-18",
-    "etag": "\"b13b0d663625f7b5dba85b2a7c94fbc67d054e45b9171ede09e7a960c7901a23\""
-  },
-  "updateMask": "*"
-}
-
-<> 2021-08-22T121523.400.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-1
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "name": "users/user-id-18",
-    "email": "  email-updated-5",
-    "displayName": "display-name-updated-5  ",
-    "aggregateVersion": 4,
-    "uid": "uid-18",
-    "etag": "whatajoke"
-  },
-  "updateMask": "*"
-}
-
-<> 2021-08-22T121514.409.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-1
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "name": "users/user-id-18",
-    "email": "  email-updated-5",
-    "displayName": "display-name-updated-5  ",
-    "aggregateVersion": 4,
-    "uid": "uid-18"
-  },
-  "updateMask": "*"
-}
-
-<> 2021-08-22T121500.409.json
-
-###
-
-GET http://localhost:8080/v1/users/user-id-1
-Content-Type: application/json
-Accept: application/json
-
-<> 2021-08-22T121348.200.json
-
-###
-
-GET http://localhost:8080/v1/users/user-id-1
-Content-Type: application/json
-Accept: application/json
-
-<> 2021-08-22T121233.200.json
-
-###
-
-POST http://localhost:8080/v1/users
-Content-Type: application/json
-Accept: application/json
-
-{
-  "userId": "user-id-1",
-  "user": {
-    "email": "email",
-    "displayName": "display-name",
-    "uid": "uid-1"
-  }
-}
-
-<> 2021-08-22T121220.200.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-18
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "name": "users/user-id-18",
-    "email": "  email-updated-5",
-    "displayName": "display-name-updated-5  ",
-    "aggregateVersion": 4,
-    "uid": "uid-18"
-  },
-  "updateMask": "*"
-}
-
-<> 2021-08-21T191657.400.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-18
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "name": "users/user-id-18",
-    "email": "  email-updated-4",
-    "displayName": "display-name-updated-4  ",
-    "aggregateVersion": 3,
-    "uid": "uid-18"
-  },
-  "updateMask": "displayName,email"
-}
-
-<> 2021-08-21T191633.200.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-18
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "name": "users/user-id-18",
-    "email": "  email-updated-3",
-    "displayName": "display-name-updated-3  ",
-    "aggregateVersion": 2,
-    "uid": "uid-18"
-  },
-  "updateMask": "displayName,email"
-}
-
-<> 2021-08-21T191509.200.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-18
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "name": "users/user-id-18",
-    "email": "email-updated-2",
-    "displayName": "display-name-updated-2",
-    "aggregateVersion": 1,
-    "uid": "uid-18"
-  },
-  "updateMask": "displayName,email"
-}
-
-<> 2021-08-21T191051.200.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-18
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "name": "users/user-id-18",
-    "email": "email-updated-2",
-    "displayName": "display-name-updated-2",
-    "aggregateVersion": 1,
-    "uid": "uid-18"
-  },
-  "updateMask": "displayName,email,uid"
-}
-
-<> 2021-08-21T191040.400.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-18
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "name": "users/user-id-18",
-    "email": "email-updated-2",
-    "displayName": "display-name-updated-2",
-    "aggregateVersion": 5,
-    "uid": "uid-18"
-  },
-  "updateMask": "displayName,email,uid"
-}
-
-<> 2021-08-21T191033.409.json
-
-###
-
-GET http://localhost:8080/v1/users:findUser?uid=uid-18
-Content-Type: application/json
-Accept: application/json
-
-<> 2021-08-21T191027.200.json
-
-###
-
-GET http://localhost:8080/v1/users/user-id-18
-Content-Type: application/json
-Accept: application/json
-
-<> 2021-08-21T191023.200.json
-
-###
-
-POST http://localhost:8080/v1/users
-Content-Type: application/json
-Accept: application/json
-
-{
-  "userId": "user-id-18",
-  "user": {
-    "email": "email",
-    "displayName": "display-name",
-    "uid": "uid-18"
-  }
-}
-
-<> 2021-08-21T191017.200.json
-
-###
-
-POST http://localhost:8080/v1/users
-Content-Type: application/json
-Accept: application/json
-
-{
-  "userId": "user-id-17",
-  "user": {
-    "email": "email",
-    "displayName": "display-name",
-    "uid": "uid-18"
-  }
-}
-
-<> 2021-08-21T191012.409.json
-
-###
-
-POST http://localhost:8080/v1/users
-Content-Type: application/json
-Accept: application/json
-
-{
-  "userId": "user-id-17",
-  "user": {
-    "email": "email",
-    "displayName": "display-name",
-    "uid": "uid-17"
-  }
-}
-
-<> 2021-08-21T191004.409.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-17
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "name": "users/user-id-18",
-    "email": "email-updated-2",
-    "displayName": "display-name-updated-2",
-    "aggregateVersion": 5,
-    "uid": "uid-18"
-  },
-  "updateMask": "displayName,email,uid"
-}
-
-<> 2021-08-21T190558.400.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-17
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "name": "users/user-id-18",
-    "email": "email-updated-2",
-    "displayName": "display-name-updated-2",
-    "aggregateVersion": 4
-  },
-  "updateMask": "displayName,email"
-}
-
-<> 2021-08-21T190536.200.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-17
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "name": "users/user-id-18",
-    "email": "email-updated-2",
-    "displayName": "display-name-updated-2",
-    "aggregateVersion": 4
-  },
-  "updateMask": "displayName,email,name"
-}
-
-<> 2021-08-21T190525.400.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-17
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "name": "users/user-id-18",
-    "email": "email-updated-2",
-    "displayName": "display-name-updated-2",
-    "aggregateVersion": 4
-  },
-  "updateMask": "displayName,email, name"
-}
-
-<> 2021-08-21T190511.400.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-17
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "name": "users/user-id-18",
-    "email": "email-updated-2",
-    "displayName": "display-name-updated-2",
-    "aggregateVersion": 3
-  },
-  "updateMask": "displayName,email, name"
-}
-
-<> 2021-08-21T190508.409.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-17
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "email": "email-updated-2",
-    "displayName": "display-name-updated-2",
-    "aggregateVersion": 3
-  },
-  "updateMask": "displayName,email"
-}
-
-<> 2021-08-21T185938.200.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-17
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "email": "email-updated-2",
-    "displayName": "display-name-updated",
-    "aggregateVersion": 2
-  },
-  "updateMask": "displayName"
-}
-
-<> 2021-08-21T185923.200.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-17
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "email": "email-updated",
-    "displayName": "display-name-updated",
-    "aggregateVersion": 1
-  },
-  "updateMask": "email"
-}
-
-<> 2021-08-21T185911.409.json
-
-###
-
-PATCH http://localhost:8080/v1/users/user-id-17
-Content-Type: application/json
-Accept: application/json
-
-{
-  "user": {
-    "email": "email-updated",
-    "displayName": "display-name-updated",
-    "aggregateVersion": 1
-  },
-  "updateMask": "email"
-}
-
-<> 2021-08-21T185906.200.json
-
-###
-
-POST http://localhost:8080/v1/users
-Content-Type: application/json
-Accept: application/json
-
-{
-  "userId": "user-id-17",
-  "user": {
-    "email": "email",
-    "displayName": "display-name",
-    "uid": "uid-17"
-  }
-}
-
-<> 2021-08-21T185837.200.json
-
-###
-
-POST http://localhost:8080/v1/users
-Content-Type: application/json
-Accept: application/json
-
-{
-  "userId": "user-id-16",
-  "user": {
-    "email": "email",
-    "displayName": "display-name",
-    "uid": "uid-16"
-  }
-}
-
-<> 2021-08-21T185830.409.json
-
-###
-
-POST http://localhost:8080/v1/users
-Content-Type: application/json
-Accept: application/json
-
-{
-  "userId": "user-id-16",
-  "user": {
-    "email": "email",
-    "displayName": "display-name",
-    "uid": "uid-16"
-  }
-}
-
-<> 2021-08-21T185723.200.json
+<> 2021-08-24T203552.200.json
 
 ###
 

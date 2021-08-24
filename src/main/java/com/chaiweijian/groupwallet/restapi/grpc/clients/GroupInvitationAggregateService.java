@@ -14,18 +14,28 @@
 
 package com.chaiweijian.groupwallet.restapi.grpc.clients;
 
+import com.chaiweijian.groupwallet.userservice.v1.AcceptGroupInvitationRequest;
 import com.chaiweijian.groupwallet.userservice.v1.CreateGroupInvitationRequest;
 import com.chaiweijian.groupwallet.userservice.v1.GroupInvitation;
 import com.chaiweijian.groupwallet.userservice.v1.GroupInvitationServiceGrpc;
+import com.chaiweijian.groupwallet.userservice.v1.RejectGroupInvitationRequest;
 import net.devh.boot.grpc.client.inject.GrpcClient;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GroupInvitationService {
-    @GrpcClient("user-aggregate")
+public class GroupInvitationAggregateService {
+    @GrpcClient("group-invitation-aggregate")
     private GroupInvitationServiceGrpc.GroupInvitationServiceBlockingStub groupInvitationServiceBlockingStub;
 
-    public GroupInvitation createGroup(CreateGroupInvitationRequest createGroupInvitationRequest) {
+    public GroupInvitation createGroupInvitation(CreateGroupInvitationRequest createGroupInvitationRequest) {
         return groupInvitationServiceBlockingStub.createGroupInvitation(createGroupInvitationRequest);
+    }
+
+    public GroupInvitation acceptGroupInvitation(AcceptGroupInvitationRequest acceptGroupInvitationRequest) {
+        return groupInvitationServiceBlockingStub.acceptGroupInvitation(acceptGroupInvitationRequest);
+    }
+
+    public GroupInvitation rejectGroupInvitation(RejectGroupInvitationRequest rejectGroupInvitationRequest) {
+        return groupInvitationServiceBlockingStub.rejectGroupInvitation(rejectGroupInvitationRequest);
     }
 }

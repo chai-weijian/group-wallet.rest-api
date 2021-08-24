@@ -6,6 +6,11 @@ grpc:
       enableKeepAlive: true
       keepAliveWithoutCalls: true
       negotiationType: plaintext
+    group-invitation-aggregate:
+      address: 'static://127.0.0.1:8091'
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
     group-aggregate:
       address: 'static://127.0.0.1:8092'
       enableKeepAlive: true

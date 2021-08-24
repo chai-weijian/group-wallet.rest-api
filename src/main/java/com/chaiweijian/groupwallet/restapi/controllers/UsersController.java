@@ -14,9 +14,13 @@
 
 package com.chaiweijian.groupwallet.restapi.controllers;
 
-import com.chaiweijian.groupwallet.restapi.grpc.clients.GroupInvitationService;
+import com.chaiweijian.groupwallet.restapi.grpc.clients.GroupInvitationAggregateService;
 import com.chaiweijian.groupwallet.restapi.grpc.clients.UserAggregateService;
 import com.chaiweijian.groupwallet.userservice.v1.*;
+import com.google.rpc.Code;
+import com.google.rpc.Status;
+import io.grpc.StatusRuntimeException;
+import io.grpc.protobuf.StatusProto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,11 +29,11 @@ import org.springframework.web.bind.annotation.*;
 public class UsersController {
 
     private final UserAggregateService userAggregateService;
-    private final GroupInvitationService groupInvitationService;
+    private final GroupInvitationAggregateService groupInvitationAggregateService;
 
-    public UsersController(UserAggregateService userAggregateService, GroupInvitationService groupInvitationService) {
+    public UsersController(UserAggregateService userAggregateService, GroupInvitationAggregateService groupInvitationAggregateService) {
         this.userAggregateService = userAggregateService;
-        this.groupInvitationService = groupInvitationService;
+        this.groupInvitationAggregateService = groupInvitationAggregateService;
     }
 
     @GetMapping(value = "users:findUser", produces = ContentType.APPLICATION_JSON, consumes = ContentType.APPLICATION_JSON)
@@ -55,11 +59,37 @@ public class UsersController {
     }
 
     @PostMapping(value = "users/{user}/groupInvitations", produces = ContentType.APPLICATION_JSON, consumes = ContentType.APPLICATION_JSON)
-    public ResponseEntity<GroupInvitation> createGroupInvitation(@RequestBody CreateGroupInvitationRequest createGroupInvitationRequest, @PathVariable String user) {
-        return ResponseEntity.ok(groupInvitationService.createGroup(createGroupInvitationRequest.toBuilder().setParent(userNameFromPathVariable(user)).build()));
+    public ResponseEntity<GroupInvitation> createGroupInvitation(@RequestBody CreateGroupInvitationRequest createGroupInvitationRequest,
+                                                                 @PathVariable String user) {
+        return ResponseEntity.ok(groupInvitationAggregateService.createGroupInvitation(createGroupInvitationRequest.toBuilder()
+                .setParent(userNameFromPathVariable(user))
+                .build()));
+    }
+
+    @PostMapping(value = "users/{user}/groupInvitations/{groupInvitation}:accept", produces = ContentType.APPLICATION_JSON, consumes = ContentType.APPLICATION_JSON)
+    public ResponseEntity<GroupInvitation> acceptGroupInvitation(@RequestBody AcceptGroupInvitationRequest acceptGroupInvitationRequest,
+                                                                 @PathVariable String user,
+                                                                 @PathVariable String groupInvitation) {
+        if (!groupInvitationNameFromPathVariable(user, groupInvitation).equals(acceptGroupInvitationRequest.getGroupInvitation().getName())) {
+            throw StatusProto.toStatusRuntimeException(Status.newBuilder().setCode(Code.INVALID_ARGUMENT_VALUE).setMessage("URL and resource name does not match").build());
+        }
+        return ResponseEntity.ok(groupInvitationAggregateService.acceptGroupInvitation(acceptGroupInvitationRequest));
+    }
+
+    @PostMapping(value = "users/{user}/groupInvitations/{groupInvitation}:reject", produces = ContentType.APPLICATION_JSON, consumes = ContentType.APPLICATION_JSON)
+    public ResponseEntity<GroupInvitation> rejectGroupInvitation(@RequestBody RejectGroupInvitationRequest rejectGroupInvitationRequest,
+                                                                 @PathVariable String user,
+                                                                 @PathVariable String groupInvitation) {
+        if (!groupInvitationNameFromPathVariable(user, groupInvitation).equals(rejectGroupInvitationRequest.getGroupInvitation().getName())) {
+            throw StatusProto.toStatusRuntimeException(Status.newBuilder().setCode(Code.INVALID_ARGUMENT_VALUE).setMessage("URL and resource name does not match").build());
+        }
+        return ResponseEntity.ok(groupInvitationAggregateService.rejectGroupInvitation(rejectGroupInvitationRequest));
     }
 
     private String userNameFromPathVariable(String name) {
         return String.format("users/%s", name);
+    }
+    private String groupInvitationNameFromPathVariable(String user, String name) {
+        return String.format("users/%s/groupInvitations/%s", user, name);
     }
 }
