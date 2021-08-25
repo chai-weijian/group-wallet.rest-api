@@ -14,6 +14,8 @@
 
 package com.chaiweijian.groupwallet.restapi.controllers;
 
+import com.chaiweijian.groupwallet.groupservice.v1.Group;
+import com.chaiweijian.groupwallet.groupservice.v1.RemoveMemberRequest;
 import com.chaiweijian.groupwallet.restapi.grpc.clients.GroupInvitationAggregateService;
 import com.chaiweijian.groupwallet.restapi.grpc.clients.UserAggregateService;
 import com.chaiweijian.groupwallet.userservice.v1.AcceptGroupInvitationRequest;
@@ -25,6 +27,7 @@ import com.chaiweijian.groupwallet.userservice.v1.GroupInvitation;
 import com.chaiweijian.groupwallet.userservice.v1.ListGroupInvitationsRequest;
 import com.chaiweijian.groupwallet.userservice.v1.ListGroupInvitationsResponse;
 import com.chaiweijian.groupwallet.userservice.v1.RejectGroupInvitationRequest;
+import com.chaiweijian.groupwallet.userservice.v1.RemoveGroupRequest;
 import com.chaiweijian.groupwallet.userservice.v1.UpdateUserRequest;
 import com.chaiweijian.groupwallet.userservice.v1.User;
 import com.google.rpc.Code;
@@ -72,6 +75,11 @@ public class UsersController {
     public ResponseEntity<User> updateUser(@RequestBody UpdateUserRequest updateUserRequest, @PathVariable String name) {
         var user = updateUserRequest.getUser().toBuilder().setName(userNameFromPathVariable(name));
         return ResponseEntity.ok(userAggregateService.updateUser(updateUserRequest.toBuilder().setUser(user).build()));
+    }
+
+    @PostMapping(value = "users/{name}:removeGroup", produces = ContentType.APPLICATION_JSON, consumes = ContentType.APPLICATION_JSON)
+    public ResponseEntity<User> removeGroup(@RequestBody RemoveGroupRequest removeGroupRequest, @PathVariable String name) {
+        return ResponseEntity.ok(userAggregateService.removeGroup(removeGroupRequest));
     }
 
     @GetMapping(value = "users/{name}/groupInvitations", produces = ContentType.APPLICATION_JSON, consumes = ContentType.APPLICATION_JSON)

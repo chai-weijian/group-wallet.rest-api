@@ -38,4 +38,8 @@ public class UserAggregateService {
     public User updateUser(UpdateUserRequest updateUserRequest) {
         return userAggregateServiceBlockingStub.updateUser(updateUserRequest);
     }
+
+    public User removeGroup(RemoveGroupRequest removeGroupRequest) {
+        return userAggregateServiceBlockingStub.removeGroup(removeGroupRequest);
+    }
 }
