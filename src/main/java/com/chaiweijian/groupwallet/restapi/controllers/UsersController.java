@@ -16,13 +16,29 @@ package com.chaiweijian.groupwallet.restapi.controllers;
 
 import com.chaiweijian.groupwallet.restapi.grpc.clients.GroupInvitationAggregateService;
 import com.chaiweijian.groupwallet.restapi.grpc.clients.UserAggregateService;
-import com.chaiweijian.groupwallet.userservice.v1.*;
+import com.chaiweijian.groupwallet.userservice.v1.AcceptGroupInvitationRequest;
+import com.chaiweijian.groupwallet.userservice.v1.CreateGroupInvitationRequest;
+import com.chaiweijian.groupwallet.userservice.v1.CreateUserRequest;
+import com.chaiweijian.groupwallet.userservice.v1.FindUserRequest;
+import com.chaiweijian.groupwallet.userservice.v1.GetUserRequest;
+import com.chaiweijian.groupwallet.userservice.v1.GroupInvitation;
+import com.chaiweijian.groupwallet.userservice.v1.ListGroupInvitationsRequest;
+import com.chaiweijian.groupwallet.userservice.v1.ListGroupInvitationsResponse;
+import com.chaiweijian.groupwallet.userservice.v1.RejectGroupInvitationRequest;
+import com.chaiweijian.groupwallet.userservice.v1.UpdateUserRequest;
+import com.chaiweijian.groupwallet.userservice.v1.User;
 import com.google.rpc.Code;
 import com.google.rpc.Status;
-import io.grpc.StatusRuntimeException;
 import io.grpc.protobuf.StatusProto;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value = "v1")
@@ -58,6 +74,23 @@ public class UsersController {
         return ResponseEntity.ok(userAggregateService.updateUser(updateUserRequest.toBuilder().setUser(user).build()));
     }
 
+    @GetMapping(value = "users/{name}/groupInvitations", produces = ContentType.APPLICATION_JSON, consumes = ContentType.APPLICATION_JSON)
+    public ResponseEntity<ListGroupInvitationsResponse> listGroupInvitation(@PathVariable String name,
+                                                                            @RequestParam(required = false) String pageToken,
+                                                                            @RequestParam(required = false, defaultValue = "50") Integer pageSize) {
+
+        var builder = ListGroupInvitationsRequest.newBuilder();
+
+        builder.setParent(userNameFromPathVariable(name))
+                .setPageSize(Math.min(pageSize, 1000));
+
+        if (pageToken != null) {
+            builder.setPageToken(pageToken);
+        }
+
+        return ResponseEntity.ok(groupInvitationAggregateService.listGroupInvitation(builder.build()));
+    }
+
     @PostMapping(value = "users/{user}/groupInvitations", produces = ContentType.APPLICATION_JSON, consumes = ContentType.APPLICATION_JSON)
     public ResponseEntity<GroupInvitation> createGroupInvitation(@RequestBody CreateGroupInvitationRequest createGroupInvitationRequest,
                                                                  @PathVariable String user) {
@@ -89,6 +122,7 @@ public class UsersController {
     private String userNameFromPathVariable(String name) {
         return String.format("users/%s", name);
     }
+
     private String groupInvitationNameFromPathVariable(String user, String name) {
         return String.format("users/%s/groupInvitations/%s", user, name);
     }

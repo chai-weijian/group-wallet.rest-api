@@ -1,3 +1,381 @@
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations?pageSize=1&pageToken=MQ==
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T101314.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations?pageSize=1
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T101309.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations?pageSize=3
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T101259.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations?pageSize=2
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T101251.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations?pageSize=1
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T101148.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations?pageSize=1&pageToken=MQ==
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T101126.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations?pageSize=1
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T101049.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations?pageSize=1
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T100958.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations?pageSize=1
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T100849.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations?pageSize=1&pageToken=Mg==
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T100823.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations?pageSize=1&pageToken=Mg==
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T100742.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations?pageSize=1&pageToken=Mg==
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T100559.500.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations?pageSize=1
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T100419.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T093647.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-2/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T093640.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T093626.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations/6e356739-3117-4183-8013-adc8dcf5d912:accept
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "name": "users/user-id-1/groupInvitations/6e356739-3117-4183-8013-adc8dcf5d912",
+    "etag": "\"08bcb93d0c2e1f77e066f7cbf3fb73163a3cc1d750acbc681f3adf5bd6eda9ad\""
+  }
+}
+
+<> 2021-08-25T093618.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T093545.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-2/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T093538.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-2/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "group": "groups/9f3e4c1f-74ce-4b74-8efd-53b275020b95"
+  }
+}
+
+<> 2021-08-25T093531.200.json
+
+###
+
+POST http://localhost:8080/v1/groups
+Content-Type: application/json
+Accept: application/json
+
+{
+  "group": {
+    "owner": "users/user-id-1",
+    "displayName": "my family group ",
+    "currencyCode": "MYR"
+  }
+}
+
+<> 2021-08-25T093514.200.json
+
+###
+
+POST http://localhost:8080/v1/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": "user-id-2",
+  "user": {
+    "email": "email",
+    "displayName": "display-name",
+    "uid": "uid-2"
+  }
+}
+
+<> 2021-08-25T093508.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T093435.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T093034.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "group": "groups/e21344ef-6120-45cc-912c-e0b7bd1e86ac"
+  }
+}
+
+<> 2021-08-25T093030.200.json
+
+###
+
+POST http://localhost:8080/v1/groups
+Content-Type: application/json
+Accept: application/json
+
+{
+  "group": {
+    "owner": "users/user-id-1",
+    "displayName": "my family group ",
+    "currencyCode": "MYR"
+  }
+}
+
+<> 2021-08-25T093013.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T092941.200.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "group": "groups/596dde62-7628-413d-b040-124310061638"
+  }
+}
+
+<> 2021-08-25T092933.200.json
+
+###
+
+POST http://localhost:8080/v1/groups
+Content-Type: application/json
+Accept: application/json
+
+{
+  "group": {
+    "owner": "users/user-id-1",
+    "displayName": "my family group ",
+    "currencyCode": "MYR"
+  }
+}
+
+<> 2021-08-25T092914.200.json
+
+###
+
+POST http://localhost:8080/v1/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": "user-id-1",
+  "user": {
+    "email": "email",
+    "displayName": "display-name",
+    "uid": "uid-1"
+  }
+}
+
+<> 2021-08-25T092907.409.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T092852.404.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T092645.500.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-25T092359.400.json
+
+###
+
+POST http://localhost:8080/v1/users/user-id-1/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+{
+  "groupInvitation": {
+    "group": "groups/8f970be8-1d63-44a9-8b4a-16c754355907"
+  }
+}
+
+<> 2021-08-25T084705.200.json
+
+###
+
+POST http://localhost:8080/v1/groups
+Content-Type: application/json
+Accept: application/json
+
+{
+  "group": {
+    "owner": "users/user-id-1",
+    "displayName": "my family group ",
+    "currencyCode": "MYR"
+  }
+}
+
+<> 2021-08-25T084643.200.json
+
+###
+
+POST http://localhost:8080/v1/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": "user-id-1",
+  "user": {
+    "email": "email",
+    "displayName": "display-name",
+    "uid": "uid-1"
+  }
+}
+
+<> 2021-08-25T084630.200.json
+
+###
+
 POST http://localhost:8080/v1/users/user-id-1/groupInvitations/36feabcc-5798-4624-8eb1-384818bd7f7e:reject
 Content-Type: application/json
 Accept: application/json
@@ -200,501 +578,6 @@ Accept: application/json
 }
 
 <> 2021-08-24T220109.409.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/c3f2e529-0d25-4db5-b2fe-051c000d1b42:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "groupInvitation": {
-    "name": "users/user-id-1/groupInvitations/c3f2e529-0d25-4db5-b2fe-051c000d1b42",
-    "etag": "\"4a2da58784e63d8f4cdb9e5851a04282f9c7acab09884b06120bbf967f98fdfa\""
-  }
-}
-
-<> 2021-08-24T220046.409.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/c3f2e529-0d25-4db5-b2fe-051c000d1b42:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "groupInvitation": {
-    "name": "users/user-id-1/groupInvitations/c3f2e529-0d25-4db5-b2fe-051c000d1b42"
-  }
-}
-
-<> 2021-08-24T220039.409.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations
-Content-Type: application/json
-Accept: application/json
-
-{
-  "groupInvitation": {
-    "group": "groups/8d713da4-4e51-4779-b1ce-0151daad3188"
-  }
-}
-
-<> 2021-08-24T220011.200.json
-
-###
-
-POST http://localhost:8080/v1/groups
-Content-Type: application/json
-Accept: application/json
-
-{
-  "group": {
-    "owner": "users/user-id-1",
-    "displayName": "my family group ",
-    "currencyCode": "MYR"
-  }
-}
-
-<> 2021-08-24T215942.200.json
-
-###
-
-POST http://localhost:8080/v1/groups
-Content-Type: application/json
-Accept: application/json
-
-{
-  "group": {
-    "owner": "users/user-id-1",
-    "displayName": "my family group ",
-    "currencyCode": "MYR"
-  }
-}
-
-<> 2021-08-24T215940.503.json
-
-###
-
-POST http://localhost:8080/v1/groups
-Content-Type: application/json
-Accept: application/json
-
-{
-  "group": {
-    "owner": "users/user-id-1",
-    "displayName": "my family group ",
-    "currencyCode": "MYR"
-  }
-}
-
-<> 2021-08-24T215937.503.json
-
-###
-
-POST http://localhost:8080/v1/groups
-Content-Type: application/json
-Accept: application/json
-
-{
-  "group": {
-    "owner": "users/user-id-1",
-    "displayName": "my family group ",
-    "currencyCode": "MYR"
-  }
-}
-
-<> 2021-08-24T215857.503.json
-
-###
-
-POST http://localhost:8080/v1/users
-Content-Type: application/json
-Accept: application/json
-
-{
-  "userId": "user-id-1",
-  "user": {
-    "email": "email",
-    "displayName": "display-name",
-    "uid": "uid-1"
-  }
-}
-
-<> 2021-08-24T215850.200.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "groupInvitation": {
-    "name": "users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2"
-  }
-}
-
-<> 2021-08-24T214959.400.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "groupInvitation": {
-    "name": "users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2"
-  }
-}
-
-<> 2021-08-24T214956.503.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "groupInvitation": {
-    "name": "users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2"
-  }
-}
-
-<> 2021-08-24T214954.503.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "groupInvitation": {
-    "name": "users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2"
-  }
-}
-
-<> 2021-08-24T214952.503.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "groupInvitation": {
-    "name": "users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2"
-  }
-}
-
-<> 2021-08-24T214949.503.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "groupInvitation": {
-    "name": "users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2"
-  }
-}
-
-<> 2021-08-24T214936.503.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "groupInvitation": {
-    "name": "users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2"
-  }
-}
-
-<> 2021-08-24T214756.503.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "groupInvitation" : {
-    "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
-  }
-}
-
-<> 2021-08-24T214736.400.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
-}
-
-<> 2021-08-24T214716.400.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
-}
-
-<> 2021-08-24T210618.400.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/e15e474a-531e-45c5-b6d2-a2e7a4d910b2:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
-}
-
-<> 2021-08-24T210608.200.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations
-Content-Type: application/json
-Accept: application/json
-
-{
-  "groupInvitation": {
-    "group": "groups/db7c8e23-d243-4085-b475-c76ef3c5aa45"
-  }
-}
-
-<> 2021-08-24T210531.200.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/cd5a5fa9-935f-4303-b208-45013007d57c:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
-}
-
-<> 2021-08-24T210502.400.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/cd5a5fa9-935f-4303-b208-45013007d57c:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
-}
-
-<> 2021-08-24T210200.500.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/cd5a5fa9-935f-4303-b208-45013007d57c:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
-}
-
-<> 2021-08-24T210131.500.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/cd5a5fa9-935f-4303-b208-45013007d57c:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
-}
-
-<> 2021-08-24T210122.200.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/cd5a5fa9-935f-4303-b208-45013007d57c:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
-}
-
-<> 2021-08-24T205938.200.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/cd5a5fa9-935f-4303-b208-45013007d57c:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
-}
-
-<> 2021-08-24T205934.200.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/cd5a5fa9-935f-4303-b208-45013007d57c:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
-}
-
-<> 2021-08-24T204446.200.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/cd5a5fa9-935f-4303-b208-45013007d57c:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
-}
-
-<> 2021-08-24T204437.200.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/cd5a5fa9-935f-4303-b208-45013007d57c:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
-}
-
-<> 2021-08-24T204431.200.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations
-Content-Type: application/json
-Accept: application/json
-
-{
-  "groupInvitation": {
-    "group": "groups/db7c8e23-d243-4085-b475-c76ef3c5aa45"
-  }
-}
-
-<> 2021-08-24T204417.200.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
-}
-
-<> 2021-08-24T204325.400.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd:accept
-Content-Type: application/json
-Accept: application/json
-
-{
-  "name": "users/user-id-1/groupInvitations/2aa7ff4c-a736-41ef-b882-9b7fe95401cd"
-}
-
-<> 2021-08-24T203840.500.json
-
-###
-
-POST http://localhost:8080/v1/users/user-id-1/groupInvitations
-Content-Type: application/json
-Accept: application/json
-
-{
-  "groupInvitation": {
-    "group": "groups/db7c8e23-d243-4085-b475-c76ef3c5aa45"
-  }
-}
-
-<> 2021-08-24T203648.200.json
-
-###
-
-POST http://localhost:8080/v1/groups
-Content-Type: application/json
-Accept: application/json
-
-{
-  "group": {
-    "owner": "users/user-id-1",
-    "displayName": "my family group ",
-    "currencyCode": "MYR"
-  }
-}
-
-<> 2021-08-24T203621.200.json
-
-###
-
-POST http://localhost:8080/v1/groups
-Content-Type: application/json
-Accept: application/json
-
-{
-  "group": {
-    "owner": "users/user-id-1",
-    "displayName": "my family group ",
-    "currencyCode": "MYR"
-  }
-}
-
-<> 2021-08-24T203602.503.json
-
-###
-
-POST http://localhost:8080/v1/users
-Content-Type: application/json
-Accept: application/json
-
-{
-  "userId": "user-id-1",
-  "user": {
-    "email": "email",
-    "displayName": "display-name",
-    "uid": "uid-1"
-  }
-}
-
-<> 2021-08-24T203552.200.json
 
 ###
 
