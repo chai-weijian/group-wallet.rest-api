@@ -39,6 +39,10 @@ public class GroupAggregateService {
         return groupAggregateServiceBlockingStub.undeleteGroup(deleteGroupRequest);
     }
 
+    public Group removeMember(RemoveMemberRequest removeMemberRequest) {
+        return groupAggregateServiceBlockingStub.removeMember(removeMemberRequest);
+    }
+
     public Group getGroup(GetGroupRequest getGroupRequest) {
         return groupAggregateServiceBlockingStub.getGroup(getGroupRequest);
     }

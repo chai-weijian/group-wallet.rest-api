@@ -56,6 +56,11 @@ public class GroupsController {
         return ResponseEntity.ok(groupAggregateService.undeleteGroup(UndeleteGroupRequest.newBuilder().setName(nameFromPathVariable(name)).build()));
     }
 
+    @PostMapping(value = "groups/{name}:removeMember", produces = ContentType.APPLICATION_JSON, consumes = ContentType.APPLICATION_JSON)
+    public ResponseEntity<Group> removeMember(@RequestBody RemoveMemberRequest removeMemberRequest, @PathVariable String name) {
+        return ResponseEntity.ok(groupAggregateService.removeMember(removeMemberRequest));
+    }
+
     private String nameFromPathVariable(String name) {
         return String.format("groups/%s", name);
     }
