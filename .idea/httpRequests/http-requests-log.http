@@ -1,3 +1,11 @@
+GET http://localhost:8080/v1/users/user-id-3/groupInvitations
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-26T144026.404.json
+
+###
+
 PATCH http://localhost:8080/v1/users/user-id-2
 Content-Type: application/json
 Accept: application/json
@@ -526,23 +534,6 @@ Accept: application/json
 }
 
 <> 2021-08-25T121737.200.json
-
-###
-
-POST http://localhost:8080/v1/users
-Content-Type: application/json
-Accept: application/json
-
-{
-  "userId": "user-id-3",
-  "user": {
-    "email": "email",
-    "displayName": "display-name",
-    "uid": "uid-3"
-  }
-}
-
-<> 2021-08-25T121726.200.json
 
 ###
 
