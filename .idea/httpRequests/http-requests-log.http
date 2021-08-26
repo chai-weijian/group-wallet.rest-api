@@ -1,3 +1,62 @@
+PATCH http://localhost:8080/v1/users/user-id-2
+Content-Type: application/json
+Accept: application/json
+
+{
+  "user": {
+    "uid": "user-id-2",
+    "displayName": "display-name-2   ",
+    "email": "  email-2"
+  },
+  "updateMask": "email,displayName,uid,name,aggregateVersion",
+  "allowMissing": true
+}
+
+<> 2021-08-26T094504.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-26T094026.200.json
+
+###
+
+POST http://localhost:8080/v1/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": "user-id-1",
+  "user": {
+    "email": "email",
+    "displayName": "display-name",
+    "uid": "uid-1"
+  }
+}
+
+<> 2021-08-26T094021.200.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-1
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-26T094012.404.json
+
+###
+
+GET http://localhost:8080/v1/users/user-id-3
+Content-Type: application/json
+Accept: application/json
+
+<> 2021-08-26T094008.404.json
+
+###
+
 GET http://localhost:8080/v1/groups/d933c88b-6f2b-4d15-8fd0-738797beaf07
 Content-Type: application/json
 Accept: application/json
@@ -484,46 +543,6 @@ Accept: application/json
 }
 
 <> 2021-08-25T121726.200.json
-
-###
-
-GET http://localhost:8080/v1/groups/d933c88b-6f2b-4d15-8fd0-738797beaf07
-Content-Type: application/json
-Accept: application/json
-
-<> 2021-08-25T121712.200.json
-
-###
-
-GET http://localhost:8080/v1/groups/d933c88b-6f2b-4d15-8fd0-738797beaf07
-Content-Type: application/json
-Accept: application/json
-
-<> 2021-08-25T121652.200.json
-
-###
-
-GET http://localhost:8080/v1/groups/d933c88b-6f2b-4d15-8fd0-738797beaf07
-Content-Type: application/json
-Accept: application/json
-
-<> 2021-08-25T111332.200.json
-
-###
-
-GET http://localhost:8080/v1/groups/d933c88b-6f2b-4d15-8fd0-738797beaf07
-Content-Type: application/json
-Accept: application/json
-
-<> 2021-08-25T111156.500.json
-
-###
-
-GET http://localhost:8080/v1/users/user-id-2/groupInvitations
-Content-Type: application/json
-Accept: application/json
-
-<> 2021-08-25T111133.200.json
 
 ###
 
