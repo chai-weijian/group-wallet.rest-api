@@ -12,7 +12,11 @@ You can find other part of this project in following links:
 
 This [Spring boot](https://spring.io/) project serve as an REST API layer of _Group Wallet_ project.  
 
-It simply forward HTTP requests to other microservices using gRPC. 
+Over the past few years I have been trying to learn and design some principles that are flexible to be used to different projects.
+
+One day I stumbled upon [API Improvement Plans](https://google.aip.dev/) and found it fits really well with what I learnt by trial and error, and offer a lot of suggestions that I haven't thought of. So I start adopting it to my project.
+
+This layer simply forward HTTP requests to other microservices using gRPC. 
 
 ## Project Status - work in progress
 
